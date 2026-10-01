@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscripción | TechAcademy</title>
+
+    <link rel="stylesheet" href="./CSS/miEstilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>TechAcademy</h1>
+
+        </div>
+
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cursos.html">
+                        Cursos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mentoria.html">
+                        Mentoría
+                    </a>
+                </li>
+
+                <li>
+                    <a href="inscripcion.html" class="btn-inscribirse">
+                        Inscribirse
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- TÍTULO -->
+
+        <section class="pagina-titulo">
+
+            <span>
+                ÚNETE A TECHACADEMY
+            </span>
+
+            <h2>
+                Formulario de inscripción
+            </h2>
+
+            <p>
+                Completa tus datos para solicitar tu inscripción
+                a uno de nuestros cursos.
+            </p>
+
+        </section>
+
+
+
+        <!-- FORMULARIO -->
+
+        <section class="formulario-seccion">
+
+
+            <form
+                action="#"
+                method="GET"
+                class="formulario"
+            >
+
+
+                <!-- DATOS PERSONALES -->
+
+                <h2>
+                    Datos personales
+                </h2>
+
+
+                <div class="form-grid">
+
+
+                    <div class="campo">
+
+                        <label for="nombre">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribe tu nombre"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="campo">
+
+                        <label for="apellido">
+                            Apellido
+                        </label>
+
+                        <input
+                            type="text"
+                            id="apellido"
+                            name="apellido"
+                            placeholder="Escribe tu apellido"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="campo">
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <div class="campo">
+
+                        <label for="telefono">
+                            Teléfono
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="477 123 4567"
+                            required
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- CURSO -->
+
+                <h2 class="form-titulo">
+                    Selecciona tu curso
+                </h2>
+
+
+                <div class="campo">
+
+                    <label for="curso">
+                        Curso de interés
+                    </label>
+
+                    <select
+                        id="curso"
+                        name="curso"
+                        required
+                    >
+
+                        <option value="">
+                            Selecciona un curso
+                        </option>
+
+                        <option value="frontend">
+                            Desarrollo Web FrontEnd
+                        </option>
+
+                        <option value="python">
+                            Python para Ciencia de Datos
+                        </option>
+
+                        <option value="bases-datos">
+                            Bases de Datos
+                        </option>
+
+                        <option value="backend">
+                            Programación Backend con APIs
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- NIVEL -->
+
+                <div class="campo">
+
+                    <label for="nivel">
+                        Nivel de experiencia
+                    </label>
+
+                    <select
+                        id="nivel"
+                        name="nivel"
+                        required
+                    >
+
+                        <option value="">
+                            Selecciona tu nivel
+                        </option>
+
+                        <option value="principiante">
+                            Principiante
+                        </option>
+
+                        <option value="intermedio">
+                            Intermedio
+                        </option>
+
+                        <option value="avanzado">
+                            Avanzado
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- MODALIDAD -->
+
+                <div class="campo">
+
+                    <label>
+                        Modalidad preferida
+                    </label>
+
+
+                    <div class="radio-opciones">
+
+                        <label>
+
+                            <input
+                                type="radio"
+                                name="modalidad"
+                                value="en-linea"
+                                required
+                            >
+
+                            En línea
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="radio"
+                                name="modalidad"
+                                value="presencial"
+                            >
+
+                            Presencial
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- COMENTARIOS -->
+
+                <div class="campo">
+
+                    <label for="comentarios">
+                        ¿Por qué deseas tomar este curso?
+                    </label>
+
+                    <textarea
+                        id="comentarios"
+                        name="comentarios"
+                        rows="5"
+                        placeholder="Cuéntanos brevemente tus objetivos..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- CHECKBOX -->
+
+                <div class="checkbox">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            name="terminos"
+                            value="acepto"
+                            required
+                        >
+
+                        Acepto los términos y condiciones
+                        de inscripción.
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- BOTÓN -->
+
+                <button
+                    type="submit"
+                    class="btn-formulario"
+                >
+                    Enviar inscripción
+                </button>
+
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div>
+
+            <h3>
+                TechAcademy
+            </h3>
+
+            <p>
+                Aprende tecnología. Construye tu futuro.
+            </p>
+
+        </div>
+
+
+        <div class="footer-enlaces">
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="cursos.html">
+                Cursos
+            </a>
+
+            <a href="mentoria.html">
+                Mentoría
+            </a>
+
+            <a href="inscripcion.html">
+                Inscribirse
+            </a>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 TechAcademy. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

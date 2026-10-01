@@ -1,0 +1,1162 @@
+/* =========================================================
+   CONFIGURACIÓN GENERAL
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #202124;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   VARIABLES - COLORES GOOGLE
+   ========================================================= */
+
+:root {
+
+    /* COLORES PRINCIPALES DE GOOGLE */
+
+    --azul: #4285F4;
+    --azul-claro: #5b95f5;
+
+    --rojo: #EA4335;
+    --amarillo: #FBBC05;
+    --verde: #34A853;
+
+    /* COLORES COMPLEMENTARIOS */
+
+    --verde-claro: #e6f4ea;
+    --azul-claro-fondo: #e8f0fe;
+    --rojo-claro: #fce8e6;
+    --amarillo-claro: #fef7e0;
+
+    --oscuro: #202124;
+    --gris: #5f6368;
+
+    --fondo: #f8f9fa;
+    --blanco: #ffffff;
+
+    --borde: #dadce0;
+
+    --sombra: 0 8px 25px rgba(60, 64, 67, 0.15);
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    width: 100%;
+    min-height: 75px;
+
+    background-color: var(--blanco);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 7%;
+
+    border-bottom: 1px solid var(--borde);
+
+    box-shadow: 0 2px 8px rgba(60, 64, 67, 0.10);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo h1 {
+    color: var(--azul);
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+
+/* =========================================================
+   NAVEGACIÓN
+   ========================================================= */
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+nav a {
+    text-decoration: none;
+
+    color: var(--oscuro);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+nav a:hover {
+    color: var(--azul);
+}
+
+
+/* =========================================================
+   BOTÓN INSCRIBIRSE
+   ========================================================= */
+
+.btn-inscribirse {
+
+    background-color: var(--azul);
+
+    color: var(--blanco) !important;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    transition: 0.3s ease;
+}
+
+
+.btn-inscribirse:hover {
+
+    background-color: #3367D6;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+
+    width: 86%;
+
+    max-width: 1200px;
+
+    margin: 60px auto;
+
+    min-height: 450px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+/* =========================================================
+   TEXTO DEL HERO
+   ========================================================= */
+
+.hero-texto {
+
+    max-width: 600px;
+}
+
+
+.etiqueta {
+
+    display: inline-block;
+
+    color: var(--verde);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero-texto h2 {
+
+    color: var(--azul);
+
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+
+    font-weight: 800;
+}
+
+
+.hero-texto p {
+
+    color: var(--gris);
+
+    font-size: 17px;
+
+    margin-bottom: 30px;
+
+    max-width: 550px;
+}
+
+
+/* =========================================================
+   BOTÓN PRINCIPAL
+   ========================================================= */
+
+.btn-principal {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: var(--azul);
+
+    color: var(--blanco);
+
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0 2px 5px rgba(66, 133, 244, 0.25);
+}
+
+
+.btn-principal:hover {
+
+    background-color: #3367D6;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(66, 133, 244, 0.30);
+}
+
+
+/* =========================================================
+   IMAGEN HERO
+   ========================================================= */
+
+.hero-imagen {
+
+    width: 100%;
+}
+
+
+.hero-imagen img {
+
+    width: 100%;
+
+    height: 370px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    box-shadow: var(--sombra);
+
+    display: block;
+}
+
+
+/* =========================================================
+   TÍTULOS DE SECCIÓN
+   ========================================================= */
+
+.titulo-seccion {
+
+    width: 90%;
+
+    max-width: 800px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+
+.titulo-seccion span {
+
+    display: block;
+
+    color: var(--verde);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+}
+
+
+.titulo-seccion h2 {
+
+    color: var(--azul);
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+}
+
+
+.titulo-seccion p {
+
+    color: var(--gris);
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   INFORMACIÓN
+   ========================================================= */
+
+.informacion {
+
+    background-color: var(--blanco);
+
+    padding: 80px 7%;
+}
+
+
+.informacion-grid {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.informacion-card {
+
+    background-color: var(--fondo);
+
+    padding: 30px;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+}
+
+
+.informacion-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: var(--sombra);
+
+    border-color: var(--azul);
+}
+
+
+.informacion-card h3 {
+
+    color: var(--azul);
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+.informacion-card p {
+
+    color: var(--gris);
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   CATÁLOGO
+   ========================================================= */
+
+#catalogo {
+
+    padding: 90px 7%;
+
+    background-color: var(--fondo);
+}
+
+
+.cursos {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   TARJETAS
+   ========================================================= */
+
+.curso {
+
+    background-color: var(--blanco);
+
+    border: 1px solid var(--borde);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 12px rgba(60, 64, 67, 0.08);
+
+    transition: 0.3s ease;
+}
+
+
+.curso:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: var(--sombra);
+
+    border-color: #c5d7f8;
+}
+
+
+/* =========================================================
+   IMAGEN DEL CURSO
+   ========================================================= */
+
+.curso > img {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+.curso-contenido {
+
+    padding: 28px;
+}
+
+
+.nivel {
+
+    display: inline-block;
+
+    background-color: var(--azul-claro-fondo);
+
+    color: var(--azul);
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   NIVEL AVANZADO
+   ========================================================= */
+
+.nivel.avanzado {
+
+    background-color: var(--rojo-claro);
+
+    color: var(--rojo);
+}
+
+
+/* =========================================================
+   TÍTULO DEL CURSO
+   ========================================================= */
+
+.curso-contenido h3 {
+
+    color: var(--oscuro);
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    margin-bottom: 12px;
+}
+
+
+.curso-contenido p {
+
+    color: var(--gris);
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   DATOS DEL CURSO
+   ========================================================= */
+
+.curso-datos {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 22px;
+}
+
+
+.curso-datos span {
+
+    background-color: #f1f3f4;
+
+    color: var(--gris);
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   LINK VER CURSO
+   ========================================================= */
+
+.ver-curso {
+
+    color: var(--azul);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+
+.ver-curso:hover {
+
+    color: var(--rojo);
+}
+
+
+/* =========================================================
+   CÓMO FUNCIONA
+   ========================================================= */
+
+.como-funciona {
+
+    background-color: var(--blanco);
+
+    padding: 90px 7%;
+}
+
+
+.pasos {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+}
+
+
+.paso {
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+.numero {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: var(--azul);
+
+    color: var(--blanco);
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    box-shadow: 0 4px 10px rgba(66, 133, 244, 0.25);
+}
+
+
+.paso:nth-child(2) .numero {
+
+    background-color: var(--rojo);
+}
+
+
+.paso:nth-child(3) .numero {
+
+    background-color: var(--verde);
+}
+
+
+.paso h3 {
+
+    color: var(--oscuro);
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+
+.paso p {
+
+    color: var(--gris);
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   SECCIÓN MENTORÍA
+   ========================================================= */
+
+.seccion-mentoria {
+
+    width: 86%;
+
+    max-width: 1150px;
+
+    margin: 80px auto;
+
+    padding: 70px;
+
+    background-color: var(--azul);
+
+    color: var(--blanco);
+
+    border-radius: 16px;
+
+    box-shadow: var(--sombra);
+}
+
+
+.seccion-mentoria > div {
+
+    max-width: 700px;
+}
+
+
+.seccion-mentoria .etiqueta {
+
+    color: var(--amarillo);
+}
+
+
+.seccion-mentoria h2 {
+
+    font-size: 35px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+
+.seccion-mentoria p {
+
+    color: #e8eaed;
+
+    font-size: 16px;
+
+    margin-bottom: 28px;
+}
+
+
+.seccion-mentoria .btn-principal {
+
+    background-color: var(--blanco);
+
+    color: var(--azul);
+
+    box-shadow: none;
+}
+
+
+.seccion-mentoria .btn-principal:hover {
+
+    background-color: var(--amarillo);
+
+    color: var(--oscuro);
+}
+
+
+/* =========================================================
+   LLAMADA A LA ACCIÓN
+   ========================================================= */
+
+.llamada-accion {
+
+    text-align: center;
+
+    padding: 90px 20px;
+
+    background-color: var(--verde);
+}
+
+
+.llamada-accion h2 {
+
+    color: var(--blanco);
+
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+
+.llamada-accion p {
+
+    color: #e6f4ea;
+
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    font-size: 16px;
+}
+
+
+.llamada-accion .btn-principal {
+
+    background-color: var(--blanco);
+
+    color: var(--verde);
+
+    box-shadow: none;
+}
+
+
+.llamada-accion .btn-principal:hover {
+
+    background-color: var(--azul);
+
+    color: var(--blanco);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+
+    background-color: #202124;
+
+    color: var(--blanco);
+
+    padding: 50px 7% 25px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+
+footer h3 {
+
+    color: var(--blanco);
+
+    font-size: 23px;
+
+    margin-bottom: 8px;
+}
+
+
+footer p {
+
+    color: #bdc1c6;
+
+    font-size: 14px;
+}
+
+
+.footer-enlaces {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.footer-enlaces a {
+
+    color: #e8eaed;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+
+.footer-enlaces a:hover {
+
+    color: var(--azul);
+}
+
+
+.copyright {
+
+    grid-column: 1 / -1;
+
+    border-top: 1px solid #3c4043;
+
+    padding-top: 20px;
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-size: 13px !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    header {
+
+        padding: 15px 4%;
+    }
+
+
+    nav ul {
+
+        gap: 15px;
+    }
+
+
+    .hero {
+
+        width: 92%;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        text-align: center;
+    }
+
+
+    .hero-texto {
+
+        margin: auto;
+    }
+
+
+    .hero-texto h2 {
+
+        font-size: 40px;
+    }
+
+
+    .hero-texto p {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .hero-imagen img {
+
+        height: 320px;
+    }
+
+
+    .informacion-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .cursos {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .pasos {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .seccion-mentoria {
+
+        width: 92%;
+
+        padding: 50px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 18px 20px;
+    }
+
+
+    .logo h1 {
+
+        font-size: 25px;
+    }
+
+
+    nav ul {
+
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    nav a {
+
+        font-size: 13px;
+    }
+
+
+    .btn-inscribirse {
+
+        padding: 8px 12px;
+    }
+
+
+    .hero {
+
+        margin: 40px auto;
+    }
+
+
+    .hero-texto h2 {
+
+        font-size: 32px;
+    }
+
+
+    .hero-texto p {
+
+        font-size: 15px;
+    }
+
+
+    .hero-imagen img {
+
+        height: 250px;
+    }
+
+
+    .titulo-seccion h2 {
+
+        font-size: 28px;
+    }
+
+
+    .informacion {
+
+        padding: 60px 20px;
+    }
+
+
+    #catalogo {
+
+        padding: 60px 20px;
+    }
+
+
+    .curso > img {
+
+        height: 200px;
+    }
+
+
+    .curso-contenido {
+
+        padding: 22px;
+    }
+
+
+    .curso-contenido h3 {
+
+        font-size: 20px;
+    }
+
+
+    .como-funciona {
+
+        padding: 60px 20px;
+    }
+
+
+    .seccion-mentoria {
+
+        width: 92%;
+
+        margin: 50px auto;
+
+        padding: 35px 25px;
+    }
+
+
+    .seccion-mentoria h2 {
+
+        font-size: 28px;
+    }
+
+
+    .llamada-accion {
+
+        padding: 65px 20px;
+    }
+
+
+    .llamada-accion h2 {
+
+        font-size: 28px;
+    }
+
+
+    footer {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding: 40px 20px 25px;
+    }
+
+
+    .footer-enlaces {
+
+        justify-content: center;
+    }
+
+
+    .copyright {
+
+        grid-column: 1;
+    }
+
+}
